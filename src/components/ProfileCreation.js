@@ -10,9 +10,6 @@ const ProfileCreation = ({ checkProfile, profileContract, account }) => {
 
     try {
       setLoading(true);
-      // Use the setProfile() function in contract to create Profile with username and bio
-      // HINT: https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html#methods-mymethod-send
-      // CODE HERE 👇
 
       await profileContract.methods
         .setProfile(username, bio)
